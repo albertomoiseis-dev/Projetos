@@ -1,0 +1,15 @@
+Explicação do código
+Estrutura HTML:
+O código HTML define a estrutura básica da página, incluindo um título, um container principal, um campo de entrada de texto, um botão de geração e um container para exibir o QR Code.
+Estilização CSS:
+O código CSS define o estilo da página, incluindo o layout, cores, fontes e responsividade.
+O container principal é centralizado e possui um estilo limpo e agradável.
+O campo de entrada de texto e o botão de geração são posicionados de forma centralizada.
+O container do QR Code é posicionado abaixo dos elementos de entrada.
+Funcionalidade JavaScript:
+O código JavaScript é responsável pela funcionalidade do gerador de QR Code.
+Primeiro, são obtidas as referências aos elementos HTML necessários, como o campo de entrada de texto, o botão de geração e o container do QR Code.
+Um evento de clique é adicionado ao botão de geração, que captura o texto digitado pelo usuário.
+Antes de gerar o QR Code, é verificado se o texto digitado não está vazio. Caso esteja, é exibido um alerta solicitando que o usuário digite um texto válido.
+A função generateQRCode() é responsável por criar uma instância do QRCode usando a biblioteca qrcode.js e exibir o QR Code no container apropriado.
+Por fim, a biblioteca qrcode.js é carregada dinamicamente usando um script adicionado ao documento.

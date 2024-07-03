@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Unidades</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Conversor de Unidades</h1>
+    <div class="input-container">
+      <!-- Campo de entrada para o valor a ser convertido -->
+      <input type="number" id="input-value" placeholder="Digite o valor">
+      <!-- Dropdown para selecionar a unidade de entrada -->
+      <select id="input-unit">
+        <option value="length">Comprimento</option>
+        <option value="weight">Peso</option>
+        <option value="temperature">Temperatura</option>
+        <option value="volume">Volume</option>
+      </select>
+    </div>
+    <div class="input-container">
+      <!-- Dropdown para selecionar a unidade de saída -->
+      <select id="output-unit">
+        <option value="length">Comprimento</option>
+        <option value="weight">Peso</option>
+        <option value="temperature">Temperatura</option>
+        <option value="volume">Volume</option>
+      </select>
+      <!-- Botão de conversão -->
+      <button id="convert-btn">Converter</button>
+    </div>
+    <div class="result-container">
+      <!-- Elemento para exibir o resultado da conversão -->
+      <p>Resultado: <span id="result">0</span></p>
+    </div>
+    <p class="instructions">
+      Para converter, insira um valor no campo de entrada, selecione as unidades de entrada e saída e clique no botão "Converter".
+    </p>
+  </div>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

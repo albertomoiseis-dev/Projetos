@@ -1,0 +1,152 @@
+/* Reset básico e estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; /* Fonte padrão */
+}
+
+/* Layout e posicionamento do formulário */
+.wrapper {
+  position: absolute;
+  width: 70%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+/* Estilo do contêiner principal */
+.container {
+  padding: 50px 30px 80px;
+  border-radius: 8px;
+  box-shadow: 0 30px 50px rgba(30, 21, 49, 0.3);
+  background-color: #2c2c2c; /* Cor de fundo principal */
+}
+
+/* Estilo do título principal */
+h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #fff; /* Cor do texto */
+}
+
+/* Estilo do formulário */
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Estilo do campo de entrada de URL */
+input {
+  width: 77.5%;
+  height: 60px;
+  background-color: #fff; /* Cor de fundo */
+  border: 1px solid #d3d4d7; /* Cor da borda */
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+/* Estilo do botão de encurtar */
+#shorten {
+  width: 20%;
+  height: 60px;
+  background-color: #3c7934; /* Cor de fundo do botão */
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  color: #fff; /* Cor do texto */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efeito hover no botão de encurtar */
+#shorten:hover {
+  background-color: #6ed161; /* Cor de fundo alterada no hover */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilo do contêiner de resultados */
+#result {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff; /* Cor de fundo */
+  height: 60px;
+  border-radius: 8px;
+  padding: 16px 20px;
+  font-size: 18px;
+  align-items: center;
+}
+
+/* Estilo do link longo */
+#long-link {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 500px;
+}
+
+/* Estilo do link encurtado */
+#short-link a {
+  margin-right: 25px;
+  text-decoration: none;
+  color: #0236b9; /* Cor do link encurtado */
+}
+
+/* Estilo do botão de cópia */
+#copy {
+  padding: 10px;
+  background-color: #edf2fe; /* Cor de fundo */
+  color: #2a5bd7; /* Cor do texto */
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efeito hover no botão de cópia */
+#copy:hover {
+  background-color: #d3d4d7; /* Cor de fundo alterada no hover */
+}
+
+/* Estilo de sucesso para o botão de cópia */
+.success {
+  background-color: #649949; /* Cor de fundo de sucesso */
+  color: #fff; /* Cor do texto */
+}
+
+/* Media query para telas menores que 990px */
+@media screen and (max-width: 990px) {
+  form {
+    flex-direction: column; /* Altera para layout de coluna */
+  }
+  input {
+    width: 100%; /* Ocupa toda a largura */
+    margin-bottom: 8px;
+  }
+  #shorten {
+    width: 100%; /* Ocupa toda a largura */
+    margin-bottom: 20px;
+  }
+  #result {
+    flex-direction: column; /* Altera para layout de coluna */
+    height: auto; /* Altura automática */
+  }
+  #long-link {
+    max-width: 100%; /* Ocupa toda a largura disponível */
+    margin-bottom: 20px;
+  }
+  #left {
+    flex-direction: column; /* Altera para layout de coluna */
+  }
+  #copy {
+    margin-top: 20px;
+    width: 100%; /* Ocupa toda a largura */
+  }
+}

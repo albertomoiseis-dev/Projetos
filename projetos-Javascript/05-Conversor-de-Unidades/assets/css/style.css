@@ -1,0 +1,81 @@
+/*
+O body é centralizado verticalmente na página usando display: flex, justify-content: center e align-items: center. A altura é definida como 100vh para ocupar toda a altura da janela.
+O .container é o elemento principal que contém todo o conversor. Ele tem um fundo branco, um preenchimento interno, bordas arredondadas e uma sombra suave.
+O h1 para o título não tem margem superior.
+Os elementos .input-container são centralizados horizontalmente usando display: flex e justify-content: center. Eles têm uma margem inferior para separar os campos de entrada.
+input, select e button têm um preenchimento interno, um tamanho de fonte de 16px, bordas sólidas cinza claro e bordas arredondadas. Eles também têm uma margem horizontal de 10px para separação.
+Os input têm uma largura fixa de 150px.
+Os select também têm uma largura fixa de 150px.
+Os button têm um fundo verde (#4CAF50), texto branco e um cursor do tipo ponteiro. Eles também têm uma largura fixa de 150px.
+Ao passar o mouse sobre os botões, a cor de fundo fica um pouco mais escura (#45a049) para dar um feedback visual.
+O .result-container exibe o resultado da conversão em um tamanho de fonte maior e em negrito.
+As .instructions têm um tamanho de fonte menor, uma cor de texto mais clara e uma margem superior para separar do resultado.
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+input {
+  width: 150px;
+}
+
+select {
+  width: 150px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  width: 150px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.result-container {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.instructions {
+  font-size: 14px;
+  color: #888;
+  margin-top: 20px;
+}

@@ -1,0 +1,74 @@
+/* Reseta as margens e preenchimentos padrão */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo do corpo da página */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo da calculadora */
+.calculator {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo do display da calculadora */
+.display {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Estilo do input do display */
+#exibirDisplay {
+  width: 100%;
+  font-size: 24px;
+  text-align: right;
+  border: none;
+  outline: none;
+}
+
+/* Estilo dos botões da calculadora */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+/* Estilo padrão dos botões */
+.btn {
+  background-color: #555;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo ao passar o mouse sobre os botões */
+.btn:hover {
+  background-color: #666;
+}
+
+/* Estilo dos botões "Limpar" e "Deletar" */
+#limpar, #deletar {
+  background-color: #f44336;
+}
+
+/* Estilo do botão "Resultado" */
+#igual {
+  background-color: #4CAF50;
+}

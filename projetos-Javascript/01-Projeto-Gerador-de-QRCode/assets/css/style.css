@@ -1,0 +1,56 @@
+/* Estilo geral da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo do container principal */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Estilo do container de entrada */
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo do campo de entrada de texto */
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 60%;
+  margin-right: 10px;
+}
+
+/* Estilo do botão de geração */
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Estilo do botão de geração ao passar o mouse */
+button:hover {
+  background-color: #45a049;
+}
+
+/* Estilo do container do QR Code */
+#qr-code-container {
+  width: 50%;
+  margin: 30px auto;
+}
