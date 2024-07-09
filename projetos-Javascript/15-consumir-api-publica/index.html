@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exemplo de Consumo de API</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumir API do GitHub</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Exemplo de Consumo de API</h1>
-  <div id="container-de-cards"></div>
-  <script src="./assets/js/script.js"></script>
+    <div class="container">
+        <h1>Informações do Repositório GitHub</h1>
+        <input type="text" id="repo-name" placeholder="Insira o nome do repositório">
+        <button id="fetch-btn">Buscar</button>
+        <div id="repo-info"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
